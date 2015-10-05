@@ -1,0 +1,228 @@
+#logoSvg path {
+  transition: stroke-width 1s linear;
+  stroke-width: 0.5px;
+  fill: #fafafa;
+  fill-opacity: 0;
+  fill-rule: evenodd;
+  overflow: visible; }
+
+.logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 350px;
+  transform: translate(-50%, -50%);
+  z-index: 2; }
+
+section {
+  position: absolute;
+  display: none;
+  width: 100%;
+  height: 100%;
+  z-index: 1090; }
+
+.section {
+  text-align: center;
+  position: relative;
+  margin: auto;
+  width: 60%;
+  height: 75%;
+  transform: translate(0, 15%);
+  padding: 17px;
+  overflow: hidden;
+  z-index: 1099; }
+
+.liste {
+  margin: auto;
+  width: auto; }
+
+.sectionSvg {
+  display: block;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  z-index: -99; }
+
+#svg {
+  opacity: 0.1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -100; }
+
+#main {
+  height: 100%;
+  width: 100%; }
+
+.cadre {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  cursor: pointer; }
+
+.audio {
+  min-width: 205px;
+  max-width: 500px;
+  height: 100%;
+  margin-right: 100px;
+  float: right;
+  text-align: left; }
+
+.audio svg {
+  transform: translate(0, 50%);
+  position: relative;
+  margin-left: auto; }
+
+.bubble--anime {
+  animation: opacity 15s ease-in infinite; }
+
+.bubble {
+  opacity: 0; }
+
+.video {
+  display: inline-block;
+  cursor: pointer;
+  margin: 12px 10px;
+  width: 250px;
+  height: 141px;
+  background: #100aad;
+  transform: matrix(1, 0, 0, 1, 0, 500);
+  opacity: 0; }
+
+.actual {
+  margin: auto;
+  width: 600px;
+  height: 420px; }
+
+.actual iframe {
+  width: 100%;
+  height: 100%; }
+
+#canvas {
+  width: 100%;
+  height: 100%; }
+
+.hidden {
+  display: none; }
+
+@-webkit-keyframes opacity {
+  0% {
+    opacity: 0; }
+  20% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@-moz-keyframes opacity {
+  0% {
+    opacity: 0; }
+  20% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@-o-keyframes opacity {
+  0% {
+    opacity: 0; }
+  20% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@keyframes opacity {
+  0% {
+    opacity: 0; }
+  20% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@-webkit-keyframes draw {
+  100% {
+    stroke-dashoffset: 0; } }
+
+@-moz-keyframes draw {
+  100% {
+    stroke-dashoffset: 0; } }
+
+@-o-keyframes draw {
+  100% {
+    stroke-dashoffset: 0; } }
+
+@keyframes draw {
+  100% {
+    stroke-dashoffset: 0; } }
+
+@-webkit-keyframes stroke {
+  100% {
+    stroke: #000; } }
+
+@-moz-keyframes stroke {
+  100% {
+    stroke: #000; } }
+
+@-o-keyframes stroke {
+  100% {
+    stroke: #000; } }
+
+@keyframes stroke {
+  100% {
+    stroke: #000; } }
+
+@-webkit-keyframes transparence {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@-moz-keyframes transparence {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@-o-keyframes transparence {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@keyframes transparence {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@-webkit-keyframes size {
+  100% {
+    transform: scale(1); } }
+
+@-moz-keyframes size {
+  100% {
+    transform: scale(1); } }
+
+@-o-keyframes size {
+  100% {
+    transform: scale(1); } }
+
+@keyframes size {
+  100% {
+    transform: scale(1); } }
+
+@-webkit-keyframes up {
+  to {
+    transform: matrix(1, 0, 0, 1, 0, 0); } }
+
+@-moz-keyframes up {
+  to {
+    transform: matrix(1, 0, 0, 1, 0, 0); } }
+
+@-o-keyframes up {
+  to {
+    transform: matrix(1, 0, 0, 1, 0, 0); } }
+
+@keyframes up {
+  to {
+    transform: matrix(1, 0, 0, 1, 0, 0); } }

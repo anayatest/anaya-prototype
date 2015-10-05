@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Anaya-association</title>
+    <link rel="stylesheet" href="./css/style.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="./css/bubble.css" media="screen" title="no title" charset="utf-8">
+    <link href='http://fonts.googleapis.com/css?family=Comfortaa:700&effect=outline' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Convergence' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script type="text/javascript" src='js/snap.svg-min.js'></script>
+  </head>
+  <body>
+    <div id='main'>
+      <canvas id="canvas"></canvas>
+      <div class="logo">
+        <!--img  id='logo' src="src/logo.png" style='position:absolute; opacity:0;' alt="logo" /-->
+
+        <svg version="1.1" id="logoSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+       viewBox="0 0 552 650" style="enable-background:new 0 0 552 650; margin: auto; transform:scale(1.5)" xml:space="default">
+
+        <g id="gLogo" >
+          <path id="A" class='blurme' style="stroke:#fff;stroke-linecap:round;stroke-linejoin:round;" d="
+          M169,332.1c22-6.8,43.6-14.6,62.7-27.8c16.5-11.4,19-27.9,7.2-44.2c-3.8-5.2-7.9-10.3-12.2-15.2c-28.6-32.8-63.4-57.8-100.6-79.7
+          c-8.1-4.7-17.3-7.8-26.2-10.7c-7.3-2.3-15-3.5-22-2c7.6,4.8,15.3,9.8,23.6,15.1c-2.2,2.4-3.3,3.4-4.3,4.5
+          c-14.1,14.2-23.3,31-28.3,50.3c-4.2,16.1-3.1,32.4-1.5,48.7c1.6,15.3,5.2,30.1,12.2,44c8.2,16.3,21,24.6,39.4,25.1
+          C136.2,340.7,152.7,337.2,169,332.1z" stroke-dasharray="800" stroke-dashoffset="800"/>
+
+          <path id="N" class='fillme blurme' style="stroke:#fff;stroke-linecap:round;stroke-linejoin:round;" d="
+          M240.9,69.5c-2.6-1.1-5.3-2.1-8-2.5c-13.4-1.8-26.9-1-39.4,3.7c-33,12.3-60.7,31-73.1,66.6c-18.7-6.7-37.5-14-57.6-10.4
+          c10.6,3.6,22,6.4,32.5,11.2c25.8,11.7,48.7,28.1,71,45.4c30,23.3,57.5,49,80.4,79.5c0.4,0.5,1.1,0.8,2.9,2.2
+          c-1.4-3.8-2-6.4-3.2-8.7c-5.7-10.5-11-21.4-17.6-31.2c-14.7-21.8-31.5-41.7-52.1-58.3c-2-1.6-4.4-3.1-3.2-6.5
+          c3.2-9.4,7.5-18.1,15.4-24.7c6.5-5.3,10.2-4.6,13.2,3.1c9.6,25,24,47.2,41.1,67.5c7.5,8.9,17.2,16,26,23.9
+          c0.5,0.4,1.3,0.5,2.6,0.9c-14-21.5-21.6-44.7-28.1-68.3c-7.8-28.5-10.4-56.9,1.1-85.2C246.2,73.7,244.4,71,240.9,69.5z" stroke-dasharray="1000" stroke-dashoffset="1000"/>
+
+          <path id="A2" class='blurme' style="stroke:#fff;stroke-linecap:round;stroke-linejoin:round;" d="
+          M390.4,61c2.6,11.8-2.3,21.4-8.7,30.9c-15.9-9.8-38.4-19.2-58.5-24.5c-15.4-4.1-31-5.8-46.9-3.6c-20.6,2.9-28.6,9.1-32.8,27.1
+          c-0.8,3.5-1.4,7.2-1.6,10.8c-1.4,31.2,4.1,61.3,15.8,90.2c5.7,14.1,12.7,27.5,22.7,39.1c6.1,7.1,13.9,8.1,22,3.4
+          c1.9-1.1,3.6-2.4,5.2-3.8c22.5-19,42.7-39.9,58.6-65c14.2-22.5,25.3-46,30.5-72.1C399,81.8,397,71,390.4,61z" stroke-dasharray="800" stroke-dashoffset="800"/>
+
+          <path id="Y"  class='fillme blurme' style="stroke:#fff;stroke-linecap:round;stroke-linejoin:round;" d="
+          M479.7,211c-30.9-15.2-63.2-14.9-96.3-6.8c15.4-23.8,29.5-47.5,33.7-75.6c4.2-27.9,0.4-55.1-6.6-81.1
+          c-1.4,15.2-1.4,31.3-4.4,46.9c-8.7,43.5-30.3,79.9-63.2,109.6c-17.3,15.6-34.6,31.3-51,47.8c-14.2,14.3-26.4,30.6-33.6,49.8
+          c-8.1,21.9-9.1,44.7-4.8,67.4c5.3,28,22,49.8,39.6,71c-11.7-20.9-18.7-43.1-20.3-66.8c-2.7-40.4,8.4-75.4,39.2-103.4
+          c16.2-14.7,34.8-25,54.1-34.4c34.9-16.9,71.5-25.9,110.6-22.5c1,0.1,2-0.3,3-0.4C479.7,211.9,479.7,211.5,479.7,211z" stroke-dasharray="1100" stroke-dashoffset="1100"/>
+
+          <path id="A3" class='blurme' style="stroke:#fff;stroke-linecap:round;stroke-linejoin:round;" d="
+          M495.1,223.5c-8.4-5.7-16.8-7.8-25.7-7.8c-26.6-0.1-52.4,4.2-77.1,14.1C366.3,240,341.3,252,320,270.5
+          c-7.2,6.3-13.1,13.6-16.4,22.9c-2.2,6.2-2.2,11.9,2.5,16.7c6.5,6.6,12.7,13.7,20.2,19.2c20.9,15.3,45.1,23.3,69.8,29.8
+          c14.2,3.7,28.6,6.6,43.4,5.3c16.6-1.5,19.3-3.8,23.6-19.8c9.4-35.1,8.5-70.5,1.3-105.8c-1.6-8-0.4-10.2,7.7-11.6
+          C479.2,225.8,486.5,224.8,495.1,223.5z" stroke-dasharray="800" stroke-dashoffset="800"/>
+
+          <path id="Aa1" class = 'fillme blurme'style="stroke:#fff;stroke-linecap:round;stroke-linejoin:round;" d="M169,332.1c22-6.8,43.6-14.6,62.7-27.8c16.5-11.4,19-27.9,7.2-44.2c-3.8-5.2-7.9-10.3-12.2-15.2c-28.6-32.8-63.4-57.8-100.6-79.7
+          c-8.1-4.7-17.3-7.8-26.2-10.7c-7.3-2.3-15-3.5-22-2c7.6,4.8,15.3,9.8,23.6,15.1c-2.2,2.4-3.3,3.4-4.3,4.5
+          c-14.1,14.2-23.3,31-28.3,50.3c-4.2,16.1-3.1,32.4-1.5,48.7c1.6,15.3,5.2,30.1,12.2,44c8.2,16.3,21,24.6,39.4,25.1
+          C136.2,340.7,152.7,337.2,169,332.1z
+          M121.2,264.8c1,12.7,4.3,17.4,16.8,20.2c10.5,2.4,21.3,3.3,27.8,4.3c24.2-0.9,43.6-4.4,62.8-9.6c10.6-2.9,12.3-8.2,5.1-16.6
+          c-9-10.4-18.4-20.6-28.2-30.3c-13.8-13.6-29.4-25-47.1-33.2c-10.8-5-14.9-3.8-21.4,6.1C125.1,223.6,119.4,243.3,121.2,264.8z" stroke-dasharray="800" stroke-dashoffset="800"/>
+
+          <path id="Aa2" class = 'fillme blurme' style="stroke:#fff;stroke-linecap:round;stroke-linejoin:round;" d="
+          M360.4,125.5c-15.5-13-33.8-16.6-53.3-14.7c-14.4,1.4-18.1,4.6-21,18.8c-2,9.6-2.7,19.4-3.7,27.1c0.7,9.1,0.8,16.1,2,23
+          c1.8,11.1,3.9,22.3,6.6,33.2c1.7,6.8,7,8.6,13.2,5.5c2.1-1.1,4.1-2.4,5.8-3.9c7.4-6.7,14.8-13.4,21.8-20.5
+          c14.1-14.4,25.8-30.4,33.6-49.1C369,135.8,367.8,131.7,360.4,125.5z M390.4,61c2.6,11.8-2.3,21.4-8.7,30.9c-15.9-9.8-38.4-19.2-58.5-24.5c-15.4-4.1-31-5.8-46.9-3.6c-20.6,2.9-28.6,9.1-32.8,27.1
+          c-0.8,3.5-1.4,7.2-1.6,10.8c-1.4,31.2,4.1,61.3,15.8,90.2c5.7,14.1,12.7,27.5,22.7,39.1c6.1,7.1,13.9,8.1,22,3.4
+          c1.9-1.1,3.6-2.4,5.2-3.8c22.5-19,42.7-39.9,58.6-65c14.2-22.5,25.3-46,30.5-72.1C399,81.8,397,71,390.4,61z" stroke-dasharray="800" stroke-dashoffset="800"/>
+
+          <path id="Aa3" class = 'fillme blurme' style="stroke:#fff;stroke-linecap:round;stroke-linejoin:round;" d="
+          M424.3,245.8c-4.9-8.9-9-10.6-18.9-8c-22.2,5.9-42.9,15.4-61.9,28.1c-7.3,4.8-14.1,10.7-19.9,17.1c-6.5,7.2-4.7,13.5,4.1,17.4
+          c23.4,10.5,47.5,18,73.5,18.6c4.3-0.4,8.6-0.6,12.9-1.3c5.4-0.9,10.3-3.2,12.5-8.8C434.6,287.6,435.5,266.4,424.3,245.8z M495.1,223.5c-8.4-5.7-16.8-7.8-25.7-7.8c-26.6-0.1-52.4,4.2-77.1,14.1C366.3,240,341.3,252,320,270.5
+          c-7.2,6.3-13.1,13.6-16.4,22.9c-2.2,6.2-2.2,11.9,2.5,16.7c6.5,6.6,12.7,13.7,20.2,19.2c20.9,15.3,45.1,23.3,69.8,29.8
+          c14.2,3.7,28.6,6.6,43.4,5.3c16.6-1.5,19.3-3.8,23.6-19.8c9.4-35.1,8.5-70.5,1.3-105.8c-1.6-8-0.4-10.2,7.7-11.6
+          C479.2,225.8,486.5,224.8,495.1,223.5z" stroke-dasharray="800" stroke-dashoffset="800"/>
+
+          <path id="a1"  style="stroke:#fff;stroke-linecap:round;stroke-linejoin:round;" d="
+          M65.5,516.9c16.5,22.2,46.2,23,63.5,10.3c2.9,6.7,6.2,8.9,11.4,7.7c5.1-1.2,6.7-3.9,6.7-11c0-11-0.2-22,0-33
+          c0.5-22-15.1-38.3-30-43.6c-18.3-6.5-38.5-0.4-51.1,15.2C53.8,478,53.8,501.2,65.5,516.9z " stroke-dasharray="800" stroke-dashoffset="800"/>
+
+          <path id='ax3' class='fillme blurme' style="stroke:#fff;stroke-linecap:round;stroke-linejoin:round;" d="
+          M65.5,516.9c16.5,22.2,46.2,23,63.5,10.3c2.9,6.7,6.2,8.9,11.4,7.7c5.1-1.2,6.7-3.9,6.7-11c0-11-0.2-22,0-33
+          c0.5-22-15.1-38.3-30-43.6c-18.3-6.5-38.5-0.4-51.1,15.2C53.8,478,53.8,501.2,65.5,516.9z
+          M248.6,516.2c16.6,22.9,47,23.8,63.9,11.1c0.3,0.4,0.5,0.8,0.7,1.2c2.9,5.7,6,7.6,10.9,6.4c4.9-1.2,6.8-4,6.8-10.6
+          c0-11.3,0.3-22.7,0-34c-0.5-19.1-9.4-33.3-26.5-41.3c-16.5-7.7-32.5-5.3-46.9,6C238.5,470.1,234.9,497.3,248.6,516.2z
+          M409.5,527c13.6,10.8,39.1,11.4,53.1,0.3c0.4,0.8,0.7,1.2,0.9,1.6c2.8,5.3,6,7.1,10.7,6c5-1.2,6.9-3.8,6.9-10
+          c0-12.3,0.3-24.6-0.1-36.9c-0.8-21.6-17.6-39.9-39-42.9c-21.1-2.9-43,10.9-49.4,31.3C386.7,494.8,393.6,514.4,409.5,527z
+          M74.4,490.2c-0.1,15.2,12.4,27.4,27.8,27.4c15,0,27.4-12.3,27.5-27.3c0.1-15.4-12.6-27.9-28.1-27.7
+          C86.6,462.8,74.5,475.1,74.4,490.2z
+          M258.1,490.4c0.1,15.3,12.4,27.3,27.9,27.2c15.1,0,27.1-12.2,27-27.5c-0.1-15.3-12.4-27.6-27.6-27.6
+          C270.4,462.5,258.1,475.1,258.1,490.4z
+          M408.4,490.2c-0.1,15.3,12.2,27.4,27.7,27.5c15.3,0,27.1-11.8,27.2-27.2c0.1-15.6-11.7-27.6-27.2-27.8
+          C420.9,462.4,408.4,474.8,408.4,490.2z
+          " stroke-dasharray="500" stroke-dashoffset="500"/>
+
+          <path id="n" class='fillme blurme' style="stroke:#fff;stroke-linecap:round;stroke-linejoin:round;" d="
+          M150.2,524.3c0,7.1,3.4,11.1,8.8,11c5.9-0.2,8.9-3.7,8.9-10.8c0.1-12.2-0.1-24.3,0.2-36.5c0.3-10.6,5.8-18.5,15.3-22.8
+          c9.3-4.3,18.6-3,26.9,3.2c8.1,6.1,10.1,14.9,10.3,24.4c0.2,11.3,0,22.7,0.1,34c0.1,5.1,3.6,8.5,8.5,8.5c5.2,0.1,8.8-3.4,8.8-8.6
+          c0.1-9.7,0.1-19.3,0-29c0-5.5,0.5-11.1-0.6-16.4c-5.9-31.2-41.8-46.9-69.1-28.5c-2.6-5.7-6.7-8.4-11.1-7.6
+          c-4.4,0.8-6.8,4.6-7.1,10.7c0,0.3,0,0.7,0,1C150.2,479.3,150.2,501.8,150.2,524.3z" stroke-dasharray="800" stroke-dashoffset="800"/>
+
+          <path id="a2"  style="stroke:#fff;stroke-linecap:round;stroke-linejoin:round;" d="
+          M248.6,516.2c16.6,22.9,47,23.8,63.9,11.1c0.3,0.4,0.5,0.8,0.7,1.2c2.9,5.7,6,7.6,10.9,6.4c4.9-1.2,6.8-4,6.8-10.6
+          c0-11.3,0.3-22.7,0-34c-0.5-19.1-9.4-33.3-26.5-41.3c-16.5-7.7-32.5-5.3-46.9,6C238.5,470.1,234.9,497.3,248.6,516.2z " stroke-dasharray="800" stroke-dashoffset="800"/>
+
+          <path id="y" class='fillme blurme' style="stroke:#fff;stroke-linecap:round;stroke-linejoin:round;" d="
+          M349.4,518.2c0.9,2.3,0.9,5.5,0,7.9c-3.1,8.8-6.8,17.3-10.2,26c-1.6,4-1.1,7.5,2.8,10.1c5,3.2,9.9,1.8,12.5-4.1
+          c7.3-16.9,14.4-34,21.5-51c6.8-16.4,13.5-32.9,20.2-49.4c2.2-5.4,0.6-9-4.2-11c-5-2-8.8-0.2-11.6,6.1
+          c-6.6,15.2-13,30.6-19.9,46.7c-2-4.7-3.7-8.6-5.3-12.6c-4.8-11.5-9.4-23.1-14.6-34.5c-2.6-5.8-7.2-7.6-11.6-5.6
+          c-4.5,2-5.8,6.9-3.4,12.7C333.5,479.1,341.6,498.6,349.4,518.2z" stroke-dasharray="800" stroke-dashoffset="800"/>
+
+          <path id="a3"  style="stroke:#fff;stroke-linecap:round;stroke-linejoin:round;" d="
+          M409.5,527c13.6,10.8,39.1,11.4,53.1,0.3c0.4,0.8,0.7,1.2,0.9,1.6c2.8,5.3,6,7.1,10.7,6c5-1.2,6.9-3.8,6.9-10
+          c0-12.3,0.3-24.6-0.1-36.9c-0.8-21.6-17.6-39.9-39-42.9c-21.1-2.9-43,10.9-49.4,31.3C386.7,494.8,393.6,514.4,409.5,527z " stroke-dasharray="800" stroke-dashoffset="800"/>
+        </g>
+          <defs>
+            <filter id="f2" width="200%" height="200%">
+              <feGaussianBlur result="blurOut" in="offOut" stdDeviation="4" />
+              <feComponentTransfer>
+                <feFuncA type="linear" slope="0.5"/>
+              </feComponentTransfer>
+              <feBlend in="SourceGraphic" in2="offOut" mode="darken" />
+            </filter>
+          </defs>
+        </svg>
+      </div>
+      <div class="audio">
+        <svg version="1.1" class='casque cadre' id="audio" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="300 0 1 600" style="enable-background:new 0 0 500 500;" xml:space="preserve">
+          <!-- <rect id="rectAudio" x="1" y="1" width="599" height='598' style='pointer-events:none;stroke-width:2; stroke: #525252; fill:#205072;fill-opacity:0' stroke-dashoffset="750" stroke-dasharray="300"/> -->
+
+          <g id="g" class='group' style='fill:#232323; stroke:#232323' transform='translate(0,0)' >
+            <style type="text/css">
+              .icon-audio{stroke:none; stroke-miterlimit:10; pointer-events: none}
+            </style>
+              <path id="casque" class='child'style='fill:none; stroke-miterlimit:10; pointer-events: none;stroke-width:20' d="M191,351c-12.3-87,17.3-146.9,109.5-147c95-0.1,120.9,58.2,110.5,147"/>
+              <path id="XMLID_2_" class="icon-audio beat" d="M234.8,364.5c0,41.8-31.5,41.1-33.5,0C199.1,320.9,234.8,313.7,234.8,364.5z"/>
+              <path id="beat" class="icon-audio red" d="M224,324h-35c-6.6,0-12,5.4-12,12v53c0,6.6,5.4,12,12,12h35V324z"/>
+              <path id="XMLID_5_" class="icon-audio beat" d="M399.5,364.5c0,41.8-31.5,41.1-33.5,0C363.8,320.9,399.5,313.7,399.5,364.5z"/>
+              <path id="beat2" class="icon-audio red" d="M376,324h35c6.6,0,12,5.4,12,12v53c0,6.6-5.4,12-12,12h-35V324z"/>
+          </g>
+        </svg>
+          <svg id='video' class='cadre' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="300 0 1 600" style="enable-background:new 0 0 500 500;" xml:space="preserve">
+            <style type="text/css">
+              .icon-video{stroke-miterlimit:10;pointer-events: none}
+            </style>
+            <g id="gVideo" transform='translate(50,60)' style='fill:#232323; stroke:none;pointer-events: none'>
+              <path id="cadre" class="icon-video" d="M418.5,146.5h-325c-1.1,0-2,0.9-2,2v173c0,1.1,0.9,2,2,2h325c1.1,0,2-0.9,2-2v-173
+                C420.5,147.4,419.6,146.5,418.5,146.5z"/>
+              <path id="part1" class="icon-video" d="M420.5,143.5v-13.2c0-6.6-5.6-11.8-12.2-11.8H103.7c-6.6,0-12.2,5.2-12.2,11.8v13.2H420.5z
+                 M381,126.5h17.3c3.1,0,5.7,2.9,5.7,6s-2.5,6-5.7,6H381c-3.1,0-5.7-2.9-5.7-6S377.9,126.5,381,126.5z M343.3,126.5h17.3
+                c3.1,0,5.7,2.9,5.7,6s-2.5,6-5.7,6h-17.3c-3.1,0-5.7-2.9-5.7-6S340.2,126.5,343.3,126.5z M306.3,126.5h17.3c3.1,0,5.7,2.9,5.7,6
+                s-2.5,6-5.7,6h-17.3c-3.1,0-5.7-2.9-5.7-6S303.2,126.5,306.3,126.5z M268.3,126.5h17.3c3.1,0,5.7,2.9,5.7,6s-2.5,6-5.7,6h-17.3
+                c-3.1,0-5.7-2.9-5.7-6S265.2,126.5,268.3,126.5z M230,126.5h17.3c3.1,0,5.7,2.9,5.7,6s-2.5,6-5.7,6H230c-3.1,0-5.7-2.9-5.7-6
+                S226.9,126.5,230,126.5z M192.7,126.5H210c3.1,0,5.7,2.9,5.7,6s-2.5,6-5.7,6h-17.3c-3.1,0-5.7-2.9-5.7-6S189.5,126.5,192.7,126.5z
+                 M153.7,126.5H171c3.1,0,5.7,2.9,5.7,6s-2.5,6-5.7,6h-17.3c-3.1,0-5.7-2.9-5.7-6S150.5,126.5,153.7,126.5z M113.3,126.5h17.3
+                c3.1,0,5.7,2.9,5.7,6s-2.5,6-5.7,6h-17.3c-3.1,0-5.7-2.9-5.7-6S110.2,126.5,113.3,126.5z"/>
+              <path id="part2" class="icon-video" d="M91.5,326.5v13.2c0,6.6,5.6,11.8,12.2,11.8h304.7c6.6,0,12.2-5.2,12.2-11.8v-13.2H91.5z
+                 M130.8,343.5h-17.3c-3.1,0-5.7-2.9-5.7-6s2.5-6,5.7-6h17.3c3.1,0,5.7,2.9,5.7,6S134,343.5,130.8,343.5z M171.2,343.5h-17.3
+                c-3.1,0-5.7-2.9-5.7-6s2.5-6,5.7-6h17.3c3.1,0,5.7,2.9,5.7,6S174.3,343.5,171.2,343.5z M210.2,343.5h-17.3c-3.1,0-5.7-2.9-5.7-6
+                s2.5-6,5.7-6h17.3c3.1,0,5.7,2.9,5.7,6S213.3,343.5,210.2,343.5z M247.5,343.5h-17.3c-3.1,0-5.7-2.9-5.7-6s2.5-6,5.7-6h17.3
+                c3.1,0,5.7,2.9,5.7,6S250.6,343.5,247.5,343.5z M285.8,343.5h-17.3c-3.1,0-5.7-2.9-5.7-6s2.5-6,5.7-6h17.3c3.1,0,5.7,2.9,5.7,6
+                S289,343.5,285.8,343.5z M323.8,343.5h-17.3c-3.1,0-5.7-2.9-5.7-6s2.5-6,5.7-6h17.3c3.1,0,5.7,2.9,5.7,6S327,343.5,323.8,343.5z
+                 M360.8,343.5h-17.3c-3.1,0-5.7-2.9-5.7-6s2.5-6,5.7-6h17.3c3.1,0,5.7,2.9,5.7,6S364,343.5,360.8,343.5z M398.5,343.5h-17.3
+                c-3.1,0-5.7-2.9-5.7-6s2.5-6,5.7-6h17.3c3.1,0,5.7,2.9,5.7,6S401.6,343.5,398.5,343.5z"/>
+            </g>
+            <path id="play" class='beat' transform='translate(50,60)' style="fill:#232323;stroke-miterlimit:10;pointer-events: none" d="M223.2,199.8v63.5c0,3.2,3.3,5.3,6.2,4l70.5-31.7c3.4-1.5,3.4-6.4,0-8l-70.5-31.7
+              C226.5,194.5,223.2,196.6,223.2,199.8z"/>
+          </svg>
+          <svg version="1.1" id="photo" class='cadre' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          	 viewBox="300 0 1 600" style="enable-background:new 0 0 500 500">
+
+            <g id="gPhoto" transform='translate(50,60)' style='pointer-events:none;fill:#232323'>
+            	<polyline points="277.8,141.3 255.3,165 278,165 "/>
+            	<polyline points="339.3,141.3 362,165 339,165 "/>
+            	<path d="M198.5,160.3h-44.3c-2.1,0-3.8-1.7-3.8-3.8l0,0c0-2.1,1.7-3.8,3.8-3.8h44.3c2.1,0,3.8,1.7,3.8,3.8l0,0
+            		C202.3,158.6,200.6,160.3,198.5,160.3z"/>
+            	<path d="M276.4,203c-28.4,0-51.4,23-51.4,51.3c0,28.4,23,51.3,51.4,51.3s53.4-23,53.4-51.3
+            		C329.8,226,304.8,203,276.4,203z"/>
+            	<path class="beat" style='fill:none' d="M277.1,223.7c-17.7,0-32.1,13.6-32.1,30.3s14.4,30.3,32.1,30.3s32.1-13.6,32.1-30.3
+            		S294.8,223.7,277.1,223.7z M277,259c-3.1,0-5.7-2.5-5.7-5.5c0-3,2.5-5.5,5.7-5.5s5.7,2.5,5.7,5.5C282.7,256.5,280.1,259,277,259z"/>
+            	<path d="M277.5,141.5v32h62v-32H277.5z M323.5,157c0,0.8-0.7,1.5-1.5,1.5h-27c-0.8,0-1.5-0.7-1.5-1.5v-10
+            		c0-0.8,0.7-1.5,1.5-1.5h27c0.8,0,1.5,0.7,1.5,1.5V157z"/>
+            	<path d="M235.6,204c11.3-9,25.6-14,41.1-14s29.8,5,41.1,14H389v-16.3c0-12.8-9.9-22.7-22.7-22.7H143.7
+            		c-12.8,0-23.7,9.9-23.7,22.7V204H235.6z"/>
+            	<path d="M321.7,207c13.1,12,21.3,28.5,21.3,47.3c0,35.9-29.7,64.8-66.3,64.8s-66.3-28.9-66.3-64.8
+            		c0-18.8,8.2-35.4,21.3-47.4H120v105.3c0,12.8,10.9,23.7,23.7,23.7h222.7c12.8,0,22.7-10.9,22.7-23.7V207H321.7z"/>
+            </g>
+          </svg>
+          <svg version="1.1" id="event" class='cadre' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="300 0 1 600" style="enable-background:new 0 0 500 500;" xml:space="preserve">
+            <g id="gEven" style='fill:#232323;pointer-events:none'transform="translate(50,10)">
+                    <g style='pointer-events:none'>
+                    	<path  d="M347,220v-17.3c0-7-5.7-12.7-12.7-12.7H164.7c-7,0-12.7,5.7-12.7,12.7V220H347z"/>
+                    	<path  d="M152,223v146.3c0,7,5.7,12.7,12.7,12.7h169.7c7,0,12.7-5.7,12.7-12.7V223H152z M311,357.3L184,357v-93
+                    		l127,0.3V357.3z"/>
+                    </g>
+            <rect id="XMLID_5_" x="170" y="180.3" width="6.9" height="15.3"/>
+            <rect id="XMLID_9_" x="322.1" y="180.3" width="6.9" height="15.3"/>
+            <g class='beat' style='pointer-events:none'>
+            		<rect id="XMLID_25_" x="185" y="303" width="20" height="17"/>
+            		<rect id="XMLID_26_" x="185" y="284" width="20" height="17"/>
+            		<path id="XMLID_27_" d="M205,282v-16h-18c-1.1,0-2,0.9-2,2v14H205z"/>
+            		<path id="XMLID_28_" d="M185,341v13c0,1.1,0.9,2,2,2h18v-15H185z"/>
+            		<rect id="XMLID_29_" x="185" y="322" width="20" height="17"/>
+
+            		<rect  x="206" y="303" width="20" height="17"/>
+            		<rect x="206" y="284" width="20" height="17"/>
+            		<path  d="M226,282v-16h-18c-1.1,0-2,0.9-2,2v14H226z"/>
+            		<path  d="M206,341v13c0,1.1,0.9,2,2,2h18v-15H206z"/>
+            		<rect  x="206" y="322" width="20" height="17"/>
+
+            		<rect  x="227" y="303" width="20" height="17"/>
+            		<rect  x="227" y="284" width="20" height="17"/>
+            		<path  d="M247,282v-16h-18c-1.1,0-2,0.9-2,2v14H247z"/>
+            		<path  d="M227,341v13c0,1.1,0.9,2,2,2h18v-15H227z"/>
+            		<rect  x="227" y="322" width="20" height="17"/>
+
+            		<rect  x="248" y="303" width="20" height="17"/>
+            		<rect  x="248" y="284" width="20" height="17"/>
+            		<path  d="M268,282v-16h-18c-1.1,0-2,0.9-2,2v14H268z"/>
+            		<path  d="M248,341v13c0,1.1,0.9,2,2,2h18v-15H248z"/>
+            		<rect  x="248" y="322" width="20" height="17"/>
+
+            		<rect  x="269" y="303" width="20" height="17"/>
+            		<rect  x="269" y="284" width="20" height="17"/>
+            		<path  d="M289,282v-16h-18c-1.1,0-2,0.9-2,2v14H289z"/>
+            		<path  d="M269,341v13c0,1.1,0.9,2,2,2h18v-15H269z"/>
+            		<rect  x="269" y="322" width="20" height="17"/>
+
+            		<rect  x="290" y="303" width="20" height="17"/>
+            		<rect  x="290" y="284" width="20" height="17"/>
+            		<path  d="M310,282v-16h-18c-1.1,0-2,0.9-2,2v14H310z"/>
+            		<path  d="M290,341v13c0,1.1,0.9,2,2,2h18v-15H290z"/>
+            		<rect  x="290" y="322" width="20" height="17"/>
+            	<rect id="dateEven" x="185" y="233" width="125" height="25.3"/>
+            </g>
+              </g>
+          </svg>
+      </div>
+      <section id='overlay'>
+        <section id='section-video' class="section">
+          <div id='liste'>
+
+          </div>
+          <iframe class="hidden" width="250" height="141" src="https://www.youtube.com/embed/ayeAcSDWYww?rel=0&amp" frameborder="0" allowfullscreen></iframe>
+          <iframe class=" hidden" width="250" height="141" src="https://www.youtube.com/embed/aMEvVTTd9d8?rel=0&amp;" frameborder="0" allowfullscreen></iframe>
+          <iframe class=" hidden" width="560" height="315" src="https://www.youtube.com/embed/9EP-KWU9Npo?rel=0&amp;" frameborder="0" allowfullscreen></iframe>
+          <iframe class=" hidden" width="560" height="315" src="https://www.youtube.com/embed/CdUn-WS6ks8?rel=0&amp;" frameborder="0" allowfullscreen></iframe>
+
+          <div id='actualV' class="actual">
+            <!-- <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/CdUn-WS6ks8?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe> -->
+            <div id='player'></div>
+
+          </div>
+          <svg version="1.1" class='sectionSvg' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width='100%' height="100%">
+          </svg>
+
+        </section>
+        <section id='section-audio' class='section'>
+          <svg version="1.1" class='sectionSvg' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width='100%' height="100%">
+          </svg>
+        </section>
+        <section id='section-photo' class='section'>
+          <svg version="1.1" class='sectionSvg' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width='100%' height="100%">
+          </svg>
+        </section>
+        <section id='section-event' class='section'>
+          <svg version="1.1" class='sectionSvg' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width='100%' height="100%">
+          </svg>
+        </section>
+      </section>
+    </div>
+    <script type="text/javascript">
+      var logoSvg = document.getElementById('logoSvg');
+      var elems = logoSvg.getElementsByTagName('path'); //list paths logo
+      var gLogo = document.getElementById('gLogo');
+        function drawlogo(anElem){
+          var style = anElem.style;
+          style.animation= "draw 0.4s linear forwards"; //start stroke
+          if (anElem.className.animVal.indexOf('blurme')>-1) {
+            setTimeout(function(){anElem.style.filter = 'url(#f2)';}, 300) //blur elements
+          }
+        }
+        function fillIt(anElem, i){
+          //Decomment si image
+          //document.getElementById('logo').style.animation = 'transparence 1s linear 1 forwards reverse';
+          if(anElem.className.animVal.indexOf('fillme')>-1){
+            anElem.style.transition = 'fill-opacity 3s linear';
+            anElem.style.fillOpacity= "1";
+          }
+          if(i<13){
+          i++;
+          fillIt(elems[i], i);
+          }else {
+          i=0;
+          setTimeout(function(){logoSvg.style.animation='size 1s linear forwards' }, 1500);
+          setTimeout(function(){removeStroke(elems[i],i)}, 3000) //wait 3s before remove stroke
+          }
+        }
+        function fill(){
+          gLogo.style.filter='url(#f2)';
+        }
+        function removeStroke(elem,i){
+          elem.style.transition = 'stroke 1.5s linear';
+          elem.style.stroke = '#a0a0a0';
+          elem.style.strokeWidth = '1px';
+          if(i<13){
+          i++;
+          removeStroke(elems[i], i);}
+        }
+        /* Element Loop
+          0 : A
+          1 : N
+          2 : A2
+          3 : Y
+          4 : A3
+          5 : Aa1
+          6 : Aa2
+          7 : Aa3
+          8 : a1
+          9 : n
+          10 : a2
+          11 : y
+          12 : a3
+          13 : last
+        */
+        function startDraw(i){
+          if(i<elems.length){
+            if( i == 13){setTimeout(function(){drawlogo(elems[i]); i=0; fillIt(elems[i], i);},150)
+          } //draw last item and fill it
+          //  if(i==13){setTimeout(function(){},10)}
+            else if( i >= 12){ setTimeout(function(){drawlogo(elems[i]); i++; startDraw(i);},150) }
+            else if(i > 9){setTimeout(function(){drawlogo(elems[i]); i++; startDraw(i)},50)}
+            else if(i==8){setTimeout(function(){drawlogo(elems[i]); i++; startDraw(i)},400)}
+            else if(i>5){setTimeout(function(){drawlogo(elems[i]); i++; startDraw(i)},10)}
+            else if(i==0){setTimeout(function(){drawlogo(elems[i]); i++; startDraw(i)},100)}
+            else setTimeout(function(){drawlogo(elems[i]); i++;startDraw(i)},350);
+          }
+        }
+        setTimeout(function(){startDraw(0)},100);
+
+    </script>
+    <script type="text/javascript">
+      //Class d'un cadre
+        function Cadre(snap, text, icon, color, url){
+          this.s = snap;
+          this.color = color;
+          this.url = url;
+          this.bool;
+          this.cadre = this.s.rect(1,1,598,599)
+            .attr({
+              pointerEvents:"none",
+              strokeWidth:2,
+              stroke: "#525252",
+              // fill: "#eaeaea",
+              fillOpacity: 0,
+              strokeDasharray:300,
+              strokeDashoffset:750
+            });
+          this.icon = this.s.append(icon);
+
+          this.innerRect = this.icon.rect(0,200,600,170)
+          .attr({
+            class:'innerRect',
+            pointerEvents:'none',
+            fill:'#eaeaea',
+            stroke:'none',
+            transform: 'rotate(-45,-200,400)'
+          });
+          this.text = this.icon.text(170,350,text)
+            .attr({fontSize:100, fillOpacity:0, fill:color, stroke:'none',
+          transform: 'rotate(-45,-450,400)', pointerEvents:'none'
+          });
+          this.make = function(){this.bool=true;cadre(this); glow(this,this.icon);
+            if(this.soonCheck)this.mess.animate({fillOpacity:1},500);
+          };
+          this.unMake = function(){this.bool=false;resetCadre(this.cadre); unGlow(this.icon);
+            if(this.soonCheck)this.mess.animate({fillOpacity:0},500);
+          };
+          this.add = function(el){this.s.append(el)};
+        }
+        Cadre.prototype.click= function(section){
+          // var section = document.getElementById("section-"+this.url);
+          if(section!=null)
+          section.make(this.url);
+
+        }
+        Cadre.prototype.soon = function(a){
+          this.soonCheck = a;
+          this.mess = this.s.text(150,500,'Prochainement!')
+            .attr({
+              fontSize:"50px",
+              fill:'#faaa10',
+              fillOpacity:0
+            });
+        }
+
+        //animation du cadre
+        function cadre(el){
+          el.cadre.animate({strokeDasharray: 600, strokeDashoffset: 0, stroke: "#959595", strokeWidth:'10px',fill:el.color, fillOpacity:0.89}, 500, mina.linear);
+        }
+        //remise à zero du cadre
+        function resetCadre(el){
+          el.animate({strokeDasharray:300, strokeDashoffset: 750, stroke:'#525252', strokeWidth:'2px', fill:'#eaeaea', fillOpacity:0},500);
+        }
+        //animation inner cadre
+        function glow(s, el){
+          if(s.bool){
+            el.select('text').animate({fillOpacity:1, transform:'rotate(-45,-10,420)'},500);
+            el.select('.innerRect').animate({transform:'rotate(-45,0,400)'},500);
+            // if(el.select('.red')!=null)
+              // el.selectAll('.red').animate({fill:"#aa2032"},500);
+            // el.select(".child").animate({stroke:'#232323'},500);
+            el.selectAll(".beat").animate({fill:'#959595'},500,function(){if(s.bool)el.selectAll(".beat").animate({fill:'#d9d9d9'},500,function(){glow(s, el)})});
+          }
+        }
+        //reset inner
+        function unGlow(el){
+          // el.animate({fill:"#525252", stroke:'#525252'},500);
+          // el.select(".child").animate({stroke:'#525252'},500);
+          el.select('.innerRect').animate({transform:'rotate(-45,-200,400)'},500,mina.easein);
+          if(el.selectAll('.beat')!=null)
+            el.selectAll(".beat").animate({fill:'#232323'},500);
+            el.selectAll(".red").animate({fill:'#232323'},500);
+          el.select('text').animate({fillOpacity:0, transform:'rotate(-45,-250,420)'},500,mina.easein);
+        }
+        function close(){
+          var sections = document.getElementsByTagName('section');
+          for(var i=0;i<sections.length;i++)
+            sections[i].style.display='none';
+        }
+
+        //Class Section
+        function Section(section){
+          this.section = section;
+          this.s = Snap(section.getElementsByTagName("svg")[0]);
+          this.close = this.s.text("100%","20","fermer") //button fermer
+            .attr({
+              fill: '#a0a0a0',
+              fillOpacity:'0',
+              cursor:'pointer',
+              transform: 'translate(-50%,0)'
+          });
+          this.rect = this.s.rect(0,0,"100%","100%");
+          this.rect.attr({
+            x:"500%",
+            y:'500%',
+            pointerEvents:'none',
+            fill: "#0a0a0a",
+            // fillOpacity:1,
+             fillOpacity:0.23
+          });
+          this.g = this.s.g(this.rect, this.close);
+
+               }
+        Section.prototype.make = function(url){
+          var overlay = document.getElementById("overlay");
+          overlay.style.display = 'block';
+          if(this.section.id == 'section-'+url)
+            this.section.style.display='block';
+          this.rect.animate({x:0,y:0,transform:'scale(1)'},300,mina.elastic);
+          this.close.animate({fillOpacity:1},300);
+          var loop = this.section.getElementsByClassName('video');
+          for(var i=0; i<loop.length; i++)
+            afficheElem(loop[i], i);
+        }
+        Section.prototype.fermer = function(){
+          this.rect.animate({transform:'matrix(0,0,0,0,500,250)'},100,function(){close()});
+          this.close.attr({fillOpacity:0});
+          var loop = this.section.getElementsByClassName('video');
+          for(var i=0; i<loop.length; i++)
+            fermerElem(loop[i], i);
+        }
+        Section.prototype.add = function(el){
+          this.s.add(el);
+        }
+
+        function afficheElem(el, time){
+          el.style.animation='up 1s '+0.1*time+'s linear forwards, transparence 1s '+0.1*time+'s ease reverse forwards';
+        }
+
+        function fermerElem(el, time){
+          // el.style.animation='up 10ms '+0.1*time+'s linear reverse forwards, transparence 0.2s '+0.1*time+'s linear forwards';
+          el.style.opacity='0';
+        }
+    </script>
+    <script type="text/javascript">
+      //Create ELements Svg
+      var section = new Section(document.getElementById("section-video"));
+      section.close.click(function(){section.fermer()});
+
+      // Elements Cadres
+      var s = Snap("#audio"); //audio
+      var g = document.getElementById('g');
+      var audio = new Cadre(s, 'audio', g, "#2050a7", 'audio');
+      audio.soon(true);
+
+      var videoSvg = Snap('#video');//video
+      var gVideo = document.getElementById('gVideo');
+      var play = document.getElementById('play');
+      var video = new Cadre(videoSvg, 'video', gVideo, "#207073",'video');
+
+      var photoSvg = Snap('#photo');
+      var gPhoto = document.getElementById('gPhoto');
+      var photo = new Cadre(photoSvg, 'galerie', gPhoto, "#17a250",'photo');
+
+      var evenSvg = Snap('#event');
+      var gEven = document.getElementById('gEven');
+      var even = new Cadre(evenSvg, 'event', gEven, "#9E0E40",'event');
+
+      // Actions souries sur les objets svg
+      s.mouseover(function(){audio.make();});
+      s.mouseout(function(){audio.unMake();});
+      s.click(function(){audio.click()});
+
+      video.add(play);
+      videoSvg.mouseover(function(){video.make()});
+      videoSvg.mouseout(function(){video.unMake()});
+      videoSvg.click(function(){video.click(section)});
+
+      photoSvg.mouseover(function(){photo.make()});
+      photoSvg.mouseout(function(){photo.unMake()});
+      photoSvg.click(function(){photo.click()});
+
+      evenSvg.mouseover(function(){even.make()});
+      evenSvg.mouseout(function(){even.unMake()});
+      evenSvg.click(function(){even.click()});
+
+      //fermer si click overlay
+      var overlay = document.getElementById('overlay');
+      overlay.addEventListener('click', function(event){ if(event.target == overlay)section.fermer(); });
+    </script>
+    <script type="text/javascript" src='js/anime2.js'></script>
+
+
+    <script type="text/javascript" >
+      //les videos
+      var tag = document.createElement('script');
+
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      var player;
+    var divplay = function onYouTubeIframeAPIReady(id) {
+        player = new YT.Player('player', {
+          videoId: id,
+          playerVars : {'rel':0},
+          events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+          }
+        });
+      }
+      function onPlayerReady(event) {
+        event.target.playVideo();
+      }
+
+      function onPlayerStateChange(event) {
+        if (event.data == YT.PlayerState.PLAYING && !done) {
+          setTimeout(stopVideo, 6000);
+          done = true;
+        }
+      }
+      function stopVideo() {
+        player.stopVideo();
+      }
+      var ids = [];
+      var liste = document.getElementById('liste');
+      var iframe = document.getElementsByTagName('iframe');
+      for(var i=0;i<iframe.length;i++) {
+
+          var iframe_src       = iframe[i].getAttribute('src');
+          var youtube_video_id = iframe_src.match(/youtube\.com.*(\?v=|\/embed\/)(.{11})/).pop();
+          // console.log(youtube_video_id);
+          if (youtube_video_id.length == 11) {
+            ids[i] = youtube_video_id;
+            // console.log(ids[i]);
+              var video_thumbnail = document.createElement('img');
+              video_thumbnail.src = 'http://img.youtube.com/vi/'+youtube_video_id+'/0.jpg';
+              video_thumbnail.className= 'video';
+              liste.appendChild(video_thumbnail);
+          }
+          if(i==iframe.length-1)
+            loadLink();
+        }
+        function loadLink(){
+          var listeVideo = document.getElementById('section-video').getElementsByClassName('video');
+          for(var i=0;i<listeVideo.length;i++){
+
+            listeVideo[i].addEventListener('click', function(e){
+                var id = e.target.src.match(/http:\/\/img\.youtube\.com.*(\/vi\/|\/embed\/)(.{11})/);
+                var player = document.getElementById('player'), newplayer, sectionVideo= document.getElementById('actualV');
+                  player.remove();
+                newplayer = document.createElement('div');
+                newplayer.id = 'player';
+                var done = false;
+                sectionVideo.appendChild(newplayer);
+                  divplay(id[2]);
+            })
+          }
+      }
+
+
+    </script>
+  </body>
+</html>
