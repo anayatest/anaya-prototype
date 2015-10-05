@@ -1,5 +1,6 @@
 #logoSvg path {
   transition: stroke-width 1s linear;
+  -webkit-transition: stroke-width 1s linear;
   stroke-width: 0.5px;
   fill: #fafafa;
   fill-opacity: 0;
@@ -11,6 +12,7 @@
   top: 50%;
   left: 50%;
   width: 350px;
+  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   z-index: 2; }
 
@@ -27,6 +29,7 @@ section {
   margin: auto;
   width: 60%;
   height: 75%;
+  -webkit-transform: translate(0, 15%);
   transform: translate(0, 15%);
   padding: 17px;
   overflow: hidden;
@@ -74,12 +77,6 @@ section {
   transform: translate(0, 50%);
   position: relative;
   margin-left: auto; }
-
-.bubble--anime {
-  animation: opacity 15s ease-in infinite; }
-
-.bubble {
-  opacity: 0; }
 
 .video {
   display: inline-block;

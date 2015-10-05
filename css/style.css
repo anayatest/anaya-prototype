@@ -70,3 +70,18 @@ html, body {
 
 body {
   background: #02000a; }
+
+.font-Openss {
+  font: "Open Sans", sans-serif; }
+
+.font-RobotSb {
+  font: "Roboto Slab", serif; }
+
+.font-Bitter {
+  font: "Bitter", serif; }
+
+.font-Comforta {
+  font: "Comfortaa", cursive; }
+
+.font-Poiretone {
+  font: "Poiret One", cursive; }
