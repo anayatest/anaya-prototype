@@ -238,10 +238,8 @@
           <div id='liste'>
 
           </div>
-          <iframe class="hidden" width="250" height="141" src="https://www.youtube.com/embed/ayeAcSDWYww?rel=0&amp" frameborder="0" allowfullscreen></iframe>
-          <iframe class=" hidden" width="250" height="141" src="https://www.youtube.com/embed/aMEvVTTd9d8?rel=0&amp;" frameborder="0" allowfullscreen></iframe>
-          <iframe class=" hidden" width="560" height="315" src="https://www.youtube.com/embed/9EP-KWU9Npo?rel=0&amp;" frameborder="0" allowfullscreen></iframe>
-          <iframe class=" hidden" width="560" height="315" src="https://www.youtube.com/embed/CdUn-WS6ks8?rel=0&amp;" frameborder="0" allowfullscreen></iframe>
+
+
 
           <div id='actualV' class="actual">
             <!-- <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/CdUn-WS6ks8?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe> -->
@@ -562,10 +560,13 @@
       }
       var ids = [];
       var liste = document.getElementById('liste');
-      var iframe = document.getElementsByTagName('iframe');
-      for(var i=0;i<iframe.length;i++) {
+      var youtube_link = ["https://www.youtube.com/embed/ayeAcSDWYww",
+      "https://www.youtube.com/embed/aMEvVTTd9d8",
+      "https://www.youtube.com/embed/9EP-KWU9Npo",
+      "https://www.youtube.com/embed/CdUn-WS6ks8"];
+      for(var i=0;i<youtube_link.length;i++) {
 
-          var iframe_src       = iframe[i].getAttribute('src');
+          var iframe_src       = youtube_link[i];
           var youtube_video_id = iframe_src.match(/youtube\.com.*(\?v=|\/embed\/)(.{11})/).pop();
           // console.log(youtube_video_id);
           if (youtube_video_id.length == 11) {
@@ -576,7 +577,7 @@
               video_thumbnail.className= 'video';
               liste.appendChild(video_thumbnail);
           }
-          if(i==iframe.length-1)
+          if(i==youtube_link.length-1)
             loadLink();
         }
         function loadLink(){

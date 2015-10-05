@@ -86,7 +86,7 @@ section {
   cursor: pointer;
   margin: 12px 10px;
   width: 250px;
-  height: 141px;
+  height: 200px;
   background: #100aad;
   transform: matrix(1, 0, 0, 1, 0, 500);
   opacity: 0; }
