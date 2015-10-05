@@ -34,7 +34,7 @@
         setTimeout(function() {
             var startTime = (new Date()).getTime();
             animate(canvas, context, startTime);
-        }, 1000);
+        }, 5000);
     }
     resizeCanvas();
 // position,
@@ -51,9 +51,9 @@
 
     }
 
-    function drawCurve(curve){
-      context.globalCompositeOperation = "source-over";
+    function drawCurve(curve, context){
         context.beginPath();
+        if(navigator.userAgent.indexOf("Chrome") != -1 )
         context.ellipse(curve.position.x, curve.position.y, curve.radX, curve.radY,curve.rotation,curve.startAngle, curve.endAngle);
         context.lineWidth = 1;
         var gradient = context.createRadialGradient(curve.position.x, curve.position.y, curve.radY*10, curve.position.x, curve.position.y, curve.radX/2);
@@ -64,7 +64,6 @@
         context.fillStyle = gradient;
         context.stroke();
         context.fill();
-        context.globalCompositeOperation = "source-over";
         context.restore();
     }
     function Star(){
