@@ -300,9 +300,10 @@
         function drawlogo(anElem){ // dessine un element du logo
           var style = anElem.style;
           style.animation= "draw 0.4s linear forwards"; //start stroke
-          // if (anElem.className.animVal.indexOf('blurme')>-1) {
-          //   setTimeout(function(){anElem.style.filter = 'url(#f2)';}, 300) //blur elements
-          // }
+          if(navigator.userAgent.indexOf("Chrome") != -1 )
+          if (anElem.className.animVal.indexOf('blurme')>-1) {
+            setTimeout(function(){anElem.style.filter = 'url(#f2)';}, 300) //blur elements
+          }
         }
         function fillIt(anElem, i){ //colorie le logo
           //Decomment si image
