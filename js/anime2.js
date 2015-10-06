@@ -6,20 +6,21 @@
         };
 })();
 
-    var canvas = document.getElementById('canvas'),
-        context = canvas.getContext('2d');
+    var canvas = document.getElementById('canvas'), //getcanvas
+        context = canvas.getContext('2d'); //get context
         canvas.style.position= 'absolute';
     var lcurves= new Array();
     var stars = new Array();
     var inter=10000;
     var change = false;
-    var aStart = (new Date()).getTime();
+    var aStart = (new Date()).getTime(); //var startTime stars
     // resize the canvas to fill browser window dynamically
     var W=window.innerWidth, H=window.innerHeight;
     // window.addEventListener('resize', resizeCanvas, true);
     function resizeCanvas() {
         canvas.width = W;
         canvas.height = H;
+        canvas.style.opacity='1'; //opacity begin canvas
         var randomY = canvas.height / 2 - Math.random() * 20;
         var _count = 3;
         var stars_count = 56;
@@ -34,7 +35,7 @@
         setTimeout(function() {
             var startTime = (new Date()).getTime();
             animate(canvas, context, startTime);
-        }, 5000);
+        }, 5000); //time start delay animation
     }
     resizeCanvas();
 // position,
@@ -51,41 +52,47 @@
 
     }
 
+
+    setTimeout(function(){canvas.style.animation= 'transparence 2s linear reverse forwards'},5000);
+
     function drawCurve(curve, context){
         context.beginPath();
         if(navigator.userAgent.indexOf("Chrome") != -1 )
         context.ellipse(curve.position.x, curve.position.y, curve.radX, curve.radY,curve.rotation,curve.startAngle, curve.endAngle);
-        context.lineWidth = 1;
-        var gradient = context.createRadialGradient(curve.position.x, curve.position.y, curve.radY*10, curve.position.x, curve.position.y, curve.radX/2);
-  			gradient.addColorStop(0, "rgba(255,255,255,0.5)");
-  			gradient.addColorStop(0.5, "rgba(255,255,255,.2)");
-  			gradient.addColorStop(1, "rgba(255,255,255, 0.06)");
-        context.strokeStyle = 'rgba(255,255,255,0.5)';
-        context.fillStyle = gradient;
+        context.lineWidth = 2;
+        // var gradient = context.createLinearGradient(0, curve.position.y+10, 0,curve.position.y-10);
+  			// gradient.addColorStop(0, "rgba(180,180,180,0.1)");
+  			// gradient.addColorStop(0.5, "rgba(0,0,0,1)");
+  			// gradient.addColorStop(1, "rgba(255,255,255, 0.1)");
+        // context.strokeStyle = gradient;
+        context.strokeStyle = 'rgba(180,180,180,0.14)';
+
+        context.fillStyle = 'rgba(255,255,255,0.03)';
+        // context.fillStyle = gradient;
         context.stroke();
         context.fill();
         context.restore();
     }
     function Star(){
       this.opacity = 0;
-      this.Init = {x: Math.random()*(W-10), y: (H/2-40)+Math.random()*70};
+      this.Init = {x: 50+Math.random()*(W-100), y: (H/2-40)+Math.random()*70};
       this.position = {x: this.Init.x , y: this.Init.y};
       this.speed = 10+20*Math.random()*50;
-      this.change = function(){this.Init.x=Math.random()*(W-10); this.Init.y=(H/2-40)+Math.random()*70}
+      this.change = function(){this.Init.x= 50+Math.random()*(W-100); this.Init.y=(H/2-40)+Math.random()*70}
     }
 
     function drawStar(star){
       context.beginPath();
-      var gradient = context.createRadialGradient(star.position.x, star.position.y, Math.PI*2, 0, 0, Math.PI/2);
-      gradient.addColorStop(0, "rgba(255,255,255,0.5)");
-      gradient.addColorStop(0.5, "rgba(255,255,255,.2)");
-      gradient.addColorStop(1, "rgba(255,255,255, 0.06)");
+      // var gradient = context.createRadialGradient(star.position.x, star.position.y, Math.PI*2, 0, 0, Math.PI/2);
+      // gradient.addColorStop(0, "rgba(255,255,255,0.5)");
+      // gradient.addColorStop(0.5, "rgba(255,255,255,.2)");
+      // gradient.addColorStop(1, "rgba(255,255,255, 0.06)");
       context.arc(star.position.x, star.position.y, 1, Math.PI*2, false);
       context.fillStyle = 'rgba(255,255,255,'+star.opacity+')';
       context.fill();
     }
 
-    this.start = function(){
+    this.start = function(){ //change rotation curve every 1m
       var a = setInterval(function(){
           change=true;
           // console.log("run");
@@ -96,9 +103,9 @@
               aCurve.rotation = (2*(Math.PI/41.16))* Math.sin((Math.PI/2)/(aCurve.speed)*0.7)+aCurve.Init.rotation;
           }
         },70); setTimeout(function(){clearInterval(b)}, 7000)
-      },100000
+      },60000
          );
-         setTimeout(function(){ clearInterval(a); change = false},100000)
+         setTimeout(function(){ clearInterval(a); change = false},60000)
        }
 
     function animate(canvas, context, startTime){
@@ -111,9 +118,9 @@
         //dessine les stars
         for(var s = 0; s<stars.length; s++){
           var star = stars[s];
-          star.position.x = star.Init.x + 2*Math.PI*Math.cos(time * (Math.PI/2)/420+star.speed);
-          star.position.y = star.Init.y+ 2*Math.PI*Math.sin(time * (Math.PI/2)/420+star.speed);
-          star.opacity = Math.sin(time*(Math.PI/2)/400+star.speed);
+          star.position.x = star.Init.x + 2*Math.PI*Math.cos(time * (Math.PI/2)/450+star.speed);
+          star.position.y = star.Init.y+ 2*Math.PI*Math.sin(time * (Math.PI/2)/450+star.speed);
+          star.opacity = Math.sin(time*(Math.PI/2)/380+star.speed);
           if(star.opacity<=0){ //change position lorsque star disparait
             star.change();
           }
